@@ -1,0 +1,110 @@
+body {
+  background-image: url("images (2).jpeg");
+  width: auto;
+  border-radius: 10px;
+  margin: 20px;
+}
+.sidebar {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #9c9797;
+  padding-top: 20px;
+  z-index: 1;
+}
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar ul li {
+  padding: 10px;
+}
+
+.sidebar ul li a {
+  color: #070404;
+  text-decoration: none;
+}
+.content {
+  margin-left: 250px; /* same width as sidebar */
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding doesn't increase width */
+  padding-left: auto;
+  padding-right: 110px;
+}
+
+.home {
+    
+  background-image: url("virtual.jpg");
+  text-align: center;
+  width: 1000px 500px;
+  background-position: auto;
+  padding: 100px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.page {
+  color: aliceblue;
+  width: 1000px 500px;
+  border: 15px black;
+  padding: 50px;
+  margin: 20px;
+}
+#box1 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 2px;
+  background-color: rgb(10, 9, 4);
+}
+.page2 {
+  color: aliceblue;
+  text-align: right;
+  width: 1000px 500px;
+  border: 15px black;
+  padding: 50px;
+  margin: 20px;
+  clear: left;
+}
+#box2 {
+  float: right;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 2px;
+  background-color: rgb(10, 9, 4);
+}
+.page3 {
+  width: 1000px 500px;
+  color: aliceblue;
+  border: 15px black;
+  padding: 50px;
+  margin: 20px;
+}
+#box3 {
+  float: left;
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 2px;
+  background-color: rgb(10, 9, 4);
+}
+.flex-container {
+  color: aliceblue;
+  margin: auto;
+  padding: 30px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  #sidebar ul li a:after {
+    content: "(" attr(data-email) ")";
+    font-style: italic;
+    font-size: 11px;
+    color: aqua;
+  }
+}
